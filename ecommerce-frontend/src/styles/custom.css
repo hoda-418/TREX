@@ -1,0 +1,48 @@
+/* src/styles/custom.css */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.product-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.cart-item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.admin-sidebar {
+  min-height: calc(100vh - 56px);
+}
+
+/* تحسينات عامة */
+.container {
+  max-width: 1200px;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+}
+
+.btn-link {
+  transition: all 0.3s ease;
+}

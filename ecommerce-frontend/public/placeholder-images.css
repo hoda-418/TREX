@@ -1,0 +1,15 @@
+/* Fallback styles for images */
+img {
+  background-color: #f8f9fa;
+}
+
+img::after {
+  content: "Image not available";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #6c757d;
+  font-size: 12px;
+}
